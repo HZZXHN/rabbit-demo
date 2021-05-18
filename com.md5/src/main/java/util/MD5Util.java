@@ -45,7 +45,8 @@ public class MD5Util {
 			if (val < 16)
 				hexValue.append("0");
 			hexValue.append(Integer.toHexString(val));
-			System.out.println("开发1, 新增代码");
+			int iii= 6 +10;
+			System.out.println(iii+"开发者2号的设计");
 		}
 		if (rang == 32) {
 			return hexValue.toString();
