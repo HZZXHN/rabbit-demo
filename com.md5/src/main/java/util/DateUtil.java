@@ -15,15 +15,15 @@ public class DateUtil {
 
 	public static String getFormatTime() {
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String string = format.format(new Date());
+		String string = format.format(new Date())+ "我是翻译分支";
 		return string;
 	}
 
 	public static String getFormatTime(String pattern) {
-/*		SimpleDateFormat format = new SimpleDateFormat(pattern);
-		String string = format.format(new Date());*/
-		String s = "我是图片分支, 我改写了这个工具类中的方法了";
-		return s;
+		SimpleDateFormat format = new SimpleDateFormat(pattern);
+		String string = format.format(new Date());
+		System.out.println("我是翻译分支, 我对工具类方法的改写与图片不同的");
+		return null;
 	}
 
 }
